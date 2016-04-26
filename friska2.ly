@@ -30,11 +30,11 @@ right = \relative c'' {
   <dis b' dis>8-.\pp [<fis b>8-. <dis fis>8-. <b dis>8-.]
   <dis fis>8-. [<fis b>8-. <b dis>8-. <dis fis>8-.]
   <cis, ais' cis>8-. [ <fis ais>8-. <cis fis>8-. <ais cis>8-.]
-  <cis fis>8-. <fis ais>8-. <cis fis ais cis>4
+  <cis fis>8-. <fis ais>8-. <cis fis ais cis>4--
   <dis fis b dis>8-.\arpeggio [<fis b>8-. <dis fis>8-. <b dis>8-.]
   <dis fis>8-. [<fis b>8-. <b dis>8-. <dis fis>8-.]
   <cis, ais' cis>8-. [ <fis ais>8-. <cis fis>8-. <ais cis>8-.]
-  <cis fis>8-. <fis ais>8-. <cis fis ais cis>4
+  <cis fis>8-. <fis ais>8-. <cis fis ais cis>4--
   \ottava #1
   bis'16 [cis'16 cis,16 cis'16 b,16 cis'16 cis,16 cis'16]
   bis,16 [cis'16 cis,16 cis'16 b,16 cis'16 cis,16 cis'16]
