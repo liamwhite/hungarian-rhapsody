@@ -71,11 +71,11 @@ right = \relative c'' {
   a8.--([cis,16 cis'8.-- cis,16])
 
   % non tanto presto, capricciosamente
-  <<{\voiceOne gis4 } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis cis] } >> \oneVoice
+  <<{\voiceOne gis4-- } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis cis] } >> \oneVoice
   r16 cis [cis cis] r16 cis [cis cis]
-  <<{\voiceOne fis,4 } \new Voice {\voiceTwo r16 cis' [cis cis cis cis cis] gis } >> \oneVoice
+  <<{\voiceOne fis,4-- } \new Voice {\voiceTwo r16 cis' [cis cis cis cis cis] gis } >> \oneVoice
   r16 cis [cis cis] r16 cis [cis cis]
-  <<{\voiceOne gis4 } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis] b } >> \oneVoice
+  <<{\voiceOne gis4-- } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis] b } >> \oneVoice
   r16 cis [cis cis] r16 cis [cis cis]
   <<{\voiceOne fis,4 } \new Voice {\voiceTwo r16 cis' [cis cis cis cis cis] gis } >> \oneVoice
   r16 cis [cis cis] r16 cis [cis cis]
@@ -121,65 +121,69 @@ left = \relative c'' {
   \grace {s16 s s} % hack
   R2*8 \unaCorda
   % 1
-  r4 \grace {gis16( [eis']} gis,4)
+  r4 \sustainOn \grace {gis16( [eis']} gis,4)
   r4
   \ottava #1 \grace {gis''16( [cis]} gis4)
   \ottava #0
-  r4
+  
+  r4 \sustainOff \sustainOn
   \grace { cis,,,16 ([a'16]} cis,4)
   r4
   \ottava #1
   \grace { fis''16 ([cis'16] } fis,4)
   \ottava #0
 
-  % 2
-  r4 \grace {gis,,16( [eis']} gis,4)
+  % 1
+  r4 \sustainOff \sustainOn \grace {gis,,16( [eis']} gis,4)
   r4
-  \ottava #1 \grace {gis''16( [cis]} gis4)
+  \ottava #1 \grace {gis''16( [cis]} gis4) \sustainOff
   \ottava #0
-  r4
+  
+  r4 \sustainOn
   \grace { cis,,,16 ([a'16]} cis,4)
   r4
   \ottava #1
-  \grace { fis''16 ([cis'16] } fis,4)
+  \grace { fis''16 ([cis'16] } fis,4) 
   \ottava #0
   
-  % 3
-  r4 \grace {gis,,16( [eis']} gis,4)
+  % 1
+  r4 \sustainOff \sustainOn \grace {gis,,16( [eis']} gis,4)
   r4
-  \ottava #1 \grace {gis''16( [cis]} gis4)
+  \ottava #1 \grace {gis''16( [cis]} gis4) \sustainOff
   \ottava #0
-  r4
+  
+  r4 \sustainOn
   \grace { cis,,,16 ([a'16]} cis,4)
   r4
   \ottava #1
   \grace { fis''16 ([cis'16] } fis,4)
   \ottava #0
 
-  % 4
-  r4 \grace {gis,,16( [eis']} gis,4)
+  % 1
+  r4 \sustainOff \sustainOn \grace {gis,,16( [eis']} gis,4)
   r4
   \ottava #1 \grace {gis''16( [cis]} gis4)
   \ottava #0
-  r4
+  
+  r4 \sustainOff\sustainOn
   \grace { cis,,,16 ([a'16]} cis,4)
   r4
   \ottava #1
-  \grace { fis''16 ([cis'16] } fis,4)
+  \grace { fis''16 ([cis'16] } fis,4) \sustainOff
   \ottava #0
   
-  % mmeat
+  % begin interesting part
   \clef bass
   r8 cis,,,8-. [b'-. eis-.]
   
   \autoBeamOff
-  a8 cis, gis' cis,
+  a8-. cis,-. gis'-. cis,-.
   r8 cis,8-. [a'-. cis-.]
-  a'8 cis, fis cis
+  a'8-. cis,-. fis-. cis-.
   r8 cis,8-. [b'-. eis-.]
-  a8 cis, gis' cis,
+  a8-. cis,-. gis'-. cis,-.
   r8 cis,8-. [a'-. cis-.]
-  a'8 cis, fis cis
+  a'8-. cis,-. fis-. cis-.
   
   % same as before but now goes both ways
   r8 cis,8-. [b'-. eis-.]
