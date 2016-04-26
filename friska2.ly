@@ -42,8 +42,34 @@ right = \relative c'' {
   bis,16 [cis'16 cis,16 cis'16 ais,16 cis'16 cis,16 cis'16]
   bis,16 [cis'16 cis,16 cis'16 <b, eis>16 cis'16 cis,16 cis'16]
   bis,16 [cis'16 cis,16 cis'16 <b, eis>16 cis'16 cis,16 cis'16]
-  bis,16 [cis'16 cis,16 cis'16 <ais, fis'>16 cis'16 cis,16 cis'16]
-  bis,16 [cis'16 cis,16 cis'16 <ais, fis'>16 cis'16 cis,16 cis'16]
+  ais,16 [cis'16 cis,16 cis'16 <ais, fis'>16 cis'16 cis,16 cis'16]
+  ais,16 [cis'16 cis,16 cis'16 <ais, fis'>16 cis'16 cis,16 cis'16]
+  % leggieriss.
+  dis,16 [cis' b, cis' ais, cis' b, cis']
+  dis,16 [cis' b, cis' fis, cis' dis, cis']
+  cis,16 [cis' ais, cis' gisis, cis' ais, cis']
+  cis,16 [cis' ais, cis' fis, cis' cis, cis']
+  dis,16 [cis' b, cis' ais, cis' b, cis']
+  dis,16 [cis' b, cis' fis, cis' dis, cis']
+  cis,16 [cis' ais, cis' gisis, cis' ais, cis']
+  cis,16 [cis' ais, cis' fis, cis' cis, cis']
+  % leggiero ma ben
+  <b, eis>16 [cis' <cis, gis'> cis'] <b, eis>16 [cis' <cis, gis'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] <b, eis>16 [cis' <cis, gis'> cis']
+  <ais, fis'>16 [cis' <cis, ais'> cis'] <ais, fis'>16 [cis' <cis, ais'> cis']
+  <ais, fis'>16 [cis' <cis, ais'> cis'] <ais, fis'>16 [cis' <cis, ais'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] <b, eis>16 [cis' <cis, gis'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] <b, eis>16 [cis' <cis, gis'> cis']
+  <ais, fis'>16 [cis' <cis, ais'> cis'] <ais, fis'>16 [cis' <cis, ais'> cis']
+  <ais, fis'>16 [cis' <cis, ais'> cis'] <ais, fis'>16 [cis' <cis, ais'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] <b, eis>16 [cis' <cis, gis'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] \stemDown <eis,, cis' eis>4->
+  <ais fis'>16 [cis' <cis, ais'> cis'] <ais, fis'>16 [cis' <cis, ais'> cis']
+  <ais, fis'>16 [cis' <cis, ais'> cis'] \stemDown <fis,, cis' fis>4->
+  <b eis>16 [cis' <cis, gis'> cis'] <b, eis>16 [cis' <cis, gis'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] \stemDown <eis,, cis' eis>4->
+  <ais fis'>16 [cis' <cis, ais'> cis'] <ais, fis'>16 [cis' <cis, ais'> cis']
+  <ais, fis'>16 [cis' <cis, ais'> cis'] \stemDown <fis,, cis' fis>4->
 }
 
 left = \relative c' {
@@ -96,6 +122,37 @@ left = \relative c' {
   \clef treble
   \autoBeamOff
   ais'8 <cis fis>8 fis,8 <cis' fis>8
+  
+  fis, [<b dis>] \stemDown cis, [<dis' fis>]
+  fis, [<dis' fis>] b [<dis fis>]
+  fis, [<ais cis>] cis, [<cis' fis>]
+  fis, [<cis' fis>] ais [<cis fis>]
+  fis, [<b dis>] cis, [<dis' fis>]
+  fis, [<dis' fis>] b [<dis fis>]
+  fis, [<ais cis>] cis, [<cis' fis>]
+  fis, [<cis' fis>] ais [<cis fis>]
+  
+  % leggiero ma ben
+  r8 \slashedGrace bis, \stemUp cis r8 \slashedGrace disis eis
+  r8 \slashedGrace gisis ais r8 \slashedGrace fisis gis
+  r8 \slashedGrace eis fis \slashedGrace e eis \slashedGrace d e
+  r8 \slashedGrace d dis \slashedGrace cis d \slashedGrace bis cis
+  r8 \slashedGrace bis \stemUp cis r8 \slashedGrace disis eis
+  r8 \slashedGrace gisis ais r8 \slashedGrace fisis gis
+  r8 \slashedGrace eis fis \slashedGrace e eis \slashedGrace d e
+  r8 \slashedGrace d dis \slashedGrace cis d \slashedGrace bis cis
+  
+  \clef bass gis [<cis eis>] cis, [<cis' eis>]
+  \clef treble <gis' bis> [<eis cis'>] <gis b>8. [<eis cis'>16]
+  \clef bass fis,8 [<cis' fis>] cis,[<cis' fis>]
+  \clef treble 
+  <<{\voiceOne <gisis' bis> [<ais cis>] ais8.-^ [cis16] } \new Voice {\voiceTwo s4 fis,4 } >> \oneVoice
+  \clef bass gis,8 [<cis eis>] cis, [<cis' eis>]
+  \clef treble <gis' bis>8 [<eis cis'>] <gis b>8. [<eis cis'>16]
+  \clef bass fis,8 [<cis' fis>] cis,[<cis' fis>]
+  \clef treble 
+  <<{\voiceOne <gisis' bis> [<ais cis>] ais8.-> [cis16] } \new Voice {\voiceTwo s4 fis,4 } >> \oneVoice
+  \clef bass
 }
 
 \score {
