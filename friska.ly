@@ -77,14 +77,14 @@ right = \relative c'' {
   r16 cis [cis cis] r16 cis [cis cis]
   <<{\voiceOne gis4-- } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis] b } >> \oneVoice
   r16 cis [cis cis] r16 cis [cis cis]
-  <<{\voiceOne fis,4 } \new Voice {\voiceTwo r16 cis' [cis cis cis cis cis] gis } >> \oneVoice
+  <<{\voiceOne fis,4-- } \new Voice {\voiceTwo r16 cis' [cis cis cis cis cis] gis } >> \oneVoice
   r16 cis [cis cis] r16 cis [cis cis]
   
   % same as before but chorded
-  <<{\voiceOne <gis gis'>8 } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis cis] } >> \oneVoice
-  <<{\voiceOne <a a'>8 s8 <gis gis'>8 } \new Voice {\voiceTwo r16 cis [cis cis] r16 cis [cis cis] } >> \oneVoice
-  <<{\voiceOne <fis, fis'>4 s16*3 <gis gis'>16 } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis] } >> \oneVoice
-  <<{\voiceOne <a a'>4 <fis fis'>4 } \new Voice {\voiceTwo r16 cis' [cis cis] r16 cis [cis cis] } >> \oneVoice
+  <<{\voiceOne <gis gis'>8-- } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis cis] } >> \oneVoice
+  <<{\voiceOne <a a'>8-- s8 <gis gis'>8-- } \new Voice {\voiceTwo r16 cis [cis cis] r16 cis [cis cis] } >> \oneVoice
+  <<{\voiceOne <fis, fis'>4-- s16*3 <gis gis'>16-- } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis] } >> \oneVoice
+  <<{\voiceOne <a a'>4-- <fis fis'>4-- } \new Voice {\voiceTwo r16 cis' [cis cis] r16 cis [cis cis] } >> \oneVoice
   <<{\voiceOne <gis gis'>4 s8 <b b'> } \new Voice {\voiceTwo r16 cis [cis cis cis cis] r16 cis } >> \oneVoice
   <<{\voiceOne <a a'>8 s8 <gis gis'>8 } \new Voice {\voiceTwo r16 cis [cis cis] r16 cis [cis cis] } >> \oneVoice
   <<{\voiceOne <fis, fis'>4 s16*3 <gis gis'>16 } \new Voice {\voiceTwo r16 cis [cis cis cis cis cis] } >> \oneVoice
@@ -100,19 +100,19 @@ right = \relative c'' {
   cis' [cis, cis cis] cis' [cis, cis cis]
   cis' [cis, cis cis] cis' [cis, cis cis]
   % oh boy
-  cis' [cis, cis' cis cis' cis, cis cis,]
+  cis' [cis, cis' cis cis'-. cis, cis cis,]
   cis' [cis, cis cis] cis' [cis, cis cis]
-  cis' [cis, cis' cis cis' cis, cis cis,]
+  cis' [cis, cis' cis cis'-. cis, cis cis,]
   cis' [cis, cis cis] cis' [cis, cis cis]
-  cis' [cis, cis' cis cis' cis, cis cis,]
+  cis' [cis, cis' cis cis'-. cis, cis cis,]
   cis' [cis, cis cis] cis' [cis, cis cis]
-  cis' [cis, cis' cis cis' cis, cis cis,]
+  cis' [cis, cis' cis cis'-. cis, cis cis,]
   cis' [cis, cis cis] cis' [cis, cis cis]
   % aaaaah
-  cis' [cis, cis' cis cis' cis, cis cis,]
-  cis' [cis, cis' cis cis' cis, cis cis,]
-  cis' [cis, cis' cis cis' cis, cis cis,]
-  cis' [cis, cis' cis cis' cis, cis cis,]
+  cis' [cis, cis' cis cis'-.-> cis, cis cis,]
+  cis' [cis, cis' cis cis'-.-> cis, cis cis,]
+  cis' [cis, cis' cis cis'-.-> cis, cis cis,]
+  cis' [cis, cis' cis cis'-.-> cis, cis cis,]
 }
 
 left = \relative c'' {
@@ -186,42 +186,42 @@ left = \relative c'' {
   a'8-. cis,-. fis-. cis-.
   
   % same as before but now goes both ways
-  r8 cis,8-. [b'-. eis-.]
-  r8 eis8-. [b-. cis,-.]
+  r8 \sustainOn cis,8-. [b'-. eis-.]
+  r8 eis8-. [b-. cis,-.] 
   
-  r8 cis8-. [a'-. fis'-.]
+  r8 \sustainOff\sustainOn cis8-. [a'-. fis'-.]
   r8 fis8-. [a,-. cis,-.]
 
-  r8 cis8-. [b'-. eis-.]
+  r8 \sustainOff\sustainOn cis8-. [b'-. eis-.]
   r8 eis8-. [b-. cis,-.]
 
-  r8 cis8-. [a'-. fis'-.]
-  r8 fis8-. [a,-. cis,-.]
+  r8 \sustainOff\sustainOn cis8-. [a'-. fis'-.]
+  r8 fis8-. [a,-. cis,-.] 
   
   % boring
-  gis'4 <cis eis b'>
-  <<{\voiceOne cis,4 } \new Voice {\voiceTwo r8 <cis' eis a>8 [b <cis eis gis>] } >> \oneVoice
-  fis,4 <cis' fis a>
-  <<{\voiceOne cis,4 } \new Voice {\voiceTwo r8 <a' cis gis'>8 [fis <a cis fis>] } >> \oneVoice
-  gis4 <cis eis b'>
-  <<{\voiceOne cis,4 } \new Voice {\voiceTwo r8 <cis' eis a>8 [b <cis eis gis>] } >> \oneVoice
-  fis,4 <cis' fis a>
-  <<{\voiceOne cis,4 } \new Voice {\voiceTwo r8 <a' cis gis'>8 [fis <a cis fis>] } >> \oneVoice
+  gis'4 \sustainOn <cis eis b'> 
+  <<{\voiceOne r8 \stemDown <cis eis a>8 [b <cis eis gis>] } \new Voice {\voiceTwo cis,4 } >> \oneVoice
+  fis4 \sustainOn <cis' fis a>
+  <<{\voiceOne r8 \stemDown <a cis gis'>8 [fis <a cis fis>] } \new Voice {\voiceTwo cis,4 } >> \oneVoice
+  gis'4 \sustainOn <cis eis b'>
+  <<{\voiceOne r8 \stemDown <cis eis a>8 [b <cis eis gis>] } \new Voice {\voiceTwo cis,4 } >> \oneVoice
+  fis4 \sustainOn <cis' fis a>
+  <<{\voiceOne r8 \stemDown <a cis gis'>8 [fis <a cis fis>] } \new Voice {\voiceTwo cis,4 } >> \oneVoice
   
   % oh boy
-  gis4 <cis eis b'>
+  gis'4\sustainOn  <cis eis b'>
   cis,4 <cis' eis b'>
-  fis,4 <cis' fis ais>
+  fis,4\sustainOn <cis' fis ais>
   cis,4 <cis' fis ais>
   % aaah
+  gis8\sustainOn [<cis eis b'>] cis,8 [<cis' eis b'>]
   gis8 [<cis eis b'>] cis,8 [<cis' eis b'>]
+  fis,8\sustainOn [<cis' fis ais>] cis,8 [<cis' fis ais>]
+  fis,8 [<cis' fis ais>] cis,8 [<cis' fis ais>]
+  gis8\sustainOn [<cis eis b'>] cis,8 [<cis' eis b'>]
   gis8 [<cis eis b'>] cis,8 [<cis' eis b'>]
-  fis,8 [<cis' fis ais>] cis,8 [<cis' fis ais>]
-  fis,8 [<cis' fis ais>] cis,8 [<cis' fis ais>]
-  gis8 [<cis eis b'>] cis,8 [<cis' eis b'>]
-  gis8 [<cis eis b'>] cis,8 [<cis' eis b'>]
-  fis,8 [<cis' fis ais>] cis,8 [<cis' fis ais>]
-  fis,8 [<cis' fis ais>] cis,8 [<cis' fis ais>]
+  fis,8\sustainOn [<cis' fis ais>] cis,8 [<cis' fis ais>]
+  fis,8 [<cis' fis ais>] cis,8 [<cis' fis ais>] \sustainOff
 }
 
 \score {
