@@ -36,6 +36,7 @@ right = \relative c'' {
   \ottava #1
   <ais fis'> [<gis eis'> <ais fis'> <b gis'>]
   <cis ais'> [<b gis'> <cis ais'> <ais fis'>]
+  % 1
   \grace { dis16 [ais'] } fis'8 \sf
   \ottava #0
   r8 <fis,,,~ dis'~>4->
@@ -47,6 +48,30 @@ right = \relative c'' {
   <eis cis'>8 [<fis dis'> <gis eis'> <eis cis'>]
   <dis bis'> [<eis cis'> <fis dis'> <gis eis'>]
   <ais fis'> [<bis gis'> <cis ais'> <dis bis'>]
+  <eis cis'> [<dis bis'> <eis cis'> <fis dis'>]
+  <gis eis'> [<fis dis'> <gis eis'> <eis cis'>]
+  % 2
+  \ottava #1
+  \grace { dis'16 [ais'] } fis'8 \sf
+  \ottava #0
+  r8 <fis,,,~ dis'~>4->
+  <fis dis'>8 [<gis eis'> <ais fis'> <fis dis'>]
+  \ottava #1
+  \grace { cis''16 [gis'] } eis'8 \sf
+  \ottava #0
+  r8 <eis,,,~ cis'~>4
+  <eis cis'>8 [<fis dis'> <gis eis'> <eis cis'>]
+  <dis bis'> [<eis cis'> <fis dis'> <gis eis'>]
+  <ais fis'> [<bis gis'> <cis ais'> <dis bis'>]
+  
+  % fun part
+  <cis eis cis'>8 [<bis bis'> <d d'> <cis cis'>
+  <dis dis'> <d d'> <e e'> <dis dis'>
+  <eis eis'> <e e'> <fis fis'> <eis eis'>
+  \ottava #1
+  <g g'> <fis fis'> <gis gis'> <g g'>
+  <a a'> <gis gis'> <ais ais'> <a a'>
+  <b b'> <ais ais'> <b b'> <bis bis'>]
 }
 
 left = \relative c' {
