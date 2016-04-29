@@ -1,4 +1,7 @@
 \version "2.16.2"
+\header {
+  tagline = ""
+}
 
 global = {
   \key fis \major
@@ -65,13 +68,19 @@ right = \relative c'' {
   <ais fis'> [<bis gis'> <cis ais'> <dis bis'>]
   
   % fun part
-  <cis eis cis'>8 [<bis bis'> <d d'> <cis cis'>
+  <cis eis cis'>8 \< [<bis bis'> <d d'> <cis cis'>
   <dis dis'> <d d'> <e e'> <dis dis'>
   <eis eis'> <e e'> <fis fis'> <eis eis'>
   \ottava #1
   <g g'> <fis fis'> <gis gis'> <g g'>
   <a a'> <gis gis'> <ais ais'> <a a'>
-  <b b'> <ais ais'> <b b'> <bis bis'>]
+  <b b'> <ais ais'> <b b'> <bis bis'>] \!
+  
+  <cis cis'> [<bis bis'> <cis eis cis'> <bis fis' bis>]
+  <cis eis cis'> [<bis bis'> <cis eis cis'> <bis fis' bis>]
+  <cis eis cis'> \ff \<
+  \ottava #0
+  <bis, bis'> [<cis cis'> <bis bis'>] \!
 }
 
 left = \relative c' {
@@ -115,6 +124,18 @@ left = \relative c' {
   cis, [<gis' cis> gis, <gis' cis>]
   dis [<fis gis bis> gis, <fis' gis bis>]
   dis [<gis bis fis'> gis, <gis' bis>]
+  
+  % fun part
+  \stemDown <cis, gis' cis> [<d d'> <bis bis'> <cis cis'>
+  <b b'> <c c'> <ais ais'> <b b'>
+  <a a'> <ais ais'> <gis gis'> <a a'>
+  <g g'> <gis gis'> <fis fis'> <g g'>
+  <eis eis'> <fis fis'> <e e'> <f f'>
+  <dis dis'> <e e'> <d d'> <dis dis'>]
+  
+  <cis cis'> [<d d'> <cis gis' cis> <d d'>]
+  <cis gis' cis> [<d d'> <cis gis' cis> <d d'>]
+  <cis gis' cis> <bis' bis'> [<cis cis'> <bis bis'>]
 }
 
 \score {
