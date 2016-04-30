@@ -81,6 +81,12 @@ right = \relative c'' {
   <cis eis cis'> \ff \<
   \ottava #0
   <bis, bis'> [<cis cis'> <bis bis'>] \!
+
+  % tom and jerry were here
+  <cis cis'> <bis, bis'> \< [<cis cis'> <bis bis'>] \!
+  << {\voiceOne <cis cis'>4 \fff <eis eis'> <ais ais'> \sf s8 <gis gis'> }\new Voice {\voiceTwo r8 <eis gis> r8 <gis cis> r8 <cis eis> [<cis eis>] } >> \oneVoice
+  <fis, ais cis fis>8 [<eis eis'> <e e'> <dis fis ais dis>\arpeggio ]
+  <d d'> [<cis fis ais cis>\arpeggio <bis bis'> <cis fis ais cis> \arpeggio]
 }
 
 left = \relative c' {
@@ -136,6 +142,12 @@ left = \relative c' {
   <cis cis'> [<d d'> <cis gis' cis> <d d'>]
   <cis gis' cis> [<d d'> <cis gis' cis> <d d'>]
   <cis gis' cis> <bis' bis'> [<cis cis'> <bis bis'>]
+  
+  <cis cis'> <bis, bis'> [<cis cis'> <bis bis'>]
+  << {\voiceOne r8 <eis' gis> r8 <gis cis> r8 <cis eis> [<cis eis>] }\new Voice {\voiceTwo <cis,, cis'>4 <eis eis'> <ais ais'> s8 <gis gis'> } >> \oneVoice
+  <fis ais cis fis>8 [<eis eis'> <e e'> <dis fis ais dis>\arpeggio ]
+  <d d'> [<cis fis ais cis>\arpeggio <bis bis'> <cis fis ais cis> \arpeggio]
+  
 }
 
 \score {
