@@ -87,6 +87,20 @@ right = \relative c'' {
   << {\voiceOne <cis cis'>4 \fff <eis eis'> <ais ais'> \sf s8 <gis gis'> }\new Voice {\voiceTwo r8 <eis gis> r8 <gis cis> r8 <cis eis> [<cis eis>] } >> \oneVoice
   <fis, ais cis fis>8 [<eis eis'> <e e'> <dis fis ais dis>\arpeggio ]
   <d d'> [<cis fis ais cis>\arpeggio <bis bis'> <cis fis ais cis> \arpeggio]
+  
+  << {\voiceOne <cis cis'>4-^ <eis eis'>4-^ <ais ais'>-^ \sf s8 <gis gis'> } \new Voice {\voiceTwo r8 <eis gis> r8 <gis cis> r8 <cis eis> [<cis eis>]} >> \oneVoice
+  \stemDown <fis, ais cis fis> [<eis eis'> <dis dis'> <cis fis ais cis>]
+  <fis ais cis fis>4-> <ais cis fis ais>->
+  
+  \ottava #1
+  <b' eis>16 [cis' <cis, gis'> cis'] <bis, eis> [cis' <cis, gis'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] <bis, eis> [cis' <cis, gis'> cis']
+  <ais, fis'> [cis' <cis, ais'> cis'] <bis, fis'> [cis' <cis, ais'> cis']
+  <ais, fis'> [cis' <cis, ais'> cis'] <bis, fis'> [cis' <cis, ais'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] <bis, eis> [cis' <cis, gis'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] <bis, eis> [cis' <cis, gis'> cis']
+  <ais, fis'> [cis' <cis, ais'> cis'] <bis, fis'> [cis' <cis, ais'> cis']
+  <ais, fis'> [cis' <cis, ais'> cis'] <bis, fis'> [cis' <cis, ais'> cis']
 }
 
 left = \relative c' {
@@ -147,7 +161,15 @@ left = \relative c' {
   << {\voiceOne r8 <eis' gis> r8 <gis cis> r8 <cis eis> [<cis eis>] }\new Voice {\voiceTwo <cis,, cis'>4 <eis eis'> <ais ais'> s8 <gis gis'> } >> \oneVoice
   <fis ais cis fis>8 [<eis eis'> <e e'> <dis fis ais dis>\arpeggio ]
   <d d'> [<cis fis ais cis>\arpeggio <bis bis'> <cis fis ais cis> \arpeggio]
+  << {\voiceOne r8 <eis' gis> r8 <gis cis> r8 <cis eis> [<cis eis>]} \new Voice {\voiceTwo <cis,, cis'>4 <eis eis'> <ais ais'> s8 <gis gis'> } >> \oneVoice
+  \stemDown <fis ais cis fis> [<eis eis'> <dis dis'> <cis fis ais cis>]
+  <fis ais cis fis>4-> <ais cis fis ais>->
   
+  % same rhythm but more chord jumping
+  <cis, cis'>8 [<cis' cis'>-> <gis gis'> <eis' eis'>-> <cis cis'>] <ais' ais'>4-^ <gis gis'>8
+  <fis fis'> [<eis eis'> <e e'> <dis dis'>] <d d'> [<cis cis'> <ais ais'> <fis fis'>]
+  <cis cis'>8 [<cis' cis'>-> <gis gis'> <eis' eis'>-> <cis cis'>] <ais' ais'>4-^ <gis gis'>8
+  <fis fis'> [<eis eis'> <e e'> <dis dis'>] <d d'> [<cis cis'> <bis bis'> <cis cis'>]
 }
 
 \score {
