@@ -101,6 +101,24 @@ right = \relative c'' {
   <b, eis>16 [cis' <cis, gis'> cis'] <bis, eis> [cis' <cis, gis'> cis']
   <ais, fis'> [cis' <cis, ais'> cis'] <bis, fis'> [cis' <cis, ais'> cis']
   <ais, fis'> [cis' <cis, ais'> cis'] <bis, fis'> [cis' <cis, ais'> cis']
+
+  <b, eis>16 [cis' <cis, gis'> cis'] <b, eis>16 [cis' <cis, gis'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] \stemDown <eis,, cis' eis>4->
+  <ais fis'>16 [cis' <cis, ais'> cis'] <ais, fis'>16 [cis' <cis, ais'> cis']
+  <ais, fis'>16 [cis' <cis, ais'> cis'] \stemDown <fis,, cis' fis>4->
+  <b eis>16 [cis' <cis, gis'> cis'] <b, eis>16 [cis' <cis, gis'> cis']
+  <b, eis>16 [cis' <cis, gis'> cis'] \stemDown <eis,, cis' eis>4->
+  <ais fis'>16 [cis' <cis, ais'> cis'] <ais, fis'>16 [cis' <cis, ais'> cis']
+  <ais, fis'>16 [cis' <cis, ais'> cis'] \stemDown <fis,, cis' fis>4->
+
+  dis'16 [cis' b, cis' ais, cis' b, cis']
+  dis,16 [cis' b, cis' fis, cis' dis, cis']
+  cis,16 [cis' ais, cis' gisis, cis' ais, cis']
+  cis,16 [cis' ais, cis' fis, cis' cis, cis']
+  dis,16 [cis' b, cis' ais, cis' b, cis']
+  dis,16 [cis' b, cis' fis, cis' dis, cis']
+  cis,16 [cis' ais, cis' gisis, cis' ais, cis']
+  cis,16 [cis' ais, cis' fis, cis' cis, cis']
 }
 
 left = \relative c' {
@@ -170,6 +188,26 @@ left = \relative c' {
   <fis fis'> [<eis eis'> <e e'> <dis dis'>] <d d'> [<cis cis'> <ais ais'> <fis fis'>]
   <cis cis'>8 [<cis' cis'>-> <gis gis'> <eis' eis'>-> <cis cis'>] <ais' ais'>4-^ <gis gis'>8
   <fis fis'> [<eis eis'> <e e'> <dis dis'>] <d d'> [<cis cis'> <bis bis'> <cis cis'>]
+  
+  gis' [<cis eis>] cis, [<cis' eis>]
+  \clef treble <gis' bis> [<eis cis'>] <gis b>8. [<eis cis'>16]
+  \clef bass fis,8 [<cis' fis>] cis,[<cis' fis>]
+  \clef treble 
+  <<{\voiceOne <gisis' bis> [<ais cis>] ais8.-^ [cis16] } \new Voice {\voiceTwo s4 fis,4 } >> \oneVoice
+  \clef bass gis,8 [<cis eis>] cis, [<cis' eis>]
+  \clef treble <gis' bis>8 [<eis cis'>] <gis b>8. [<eis cis'>16]
+  \clef bass fis,8 [<cis' fis>] cis,[<cis' fis>]
+  \clef treble 
+  <<{\voiceOne <gisis' bis> [<ais cis>] ais8.-> [cis16] } \new Voice {\voiceTwo s4 fis,4 } >> \oneVoice
+
+  fis8 [<b dis>] \stemDown cis, [<dis' fis>]
+  fis, [<dis' fis>] b [<dis fis>]
+  fis, [<ais cis>] cis, [<cis' fis>]
+  fis, [<cis' fis>] ais [<cis fis>]
+  fis, [<b dis>] cis, [<dis' fis>]
+  fis, [<dis' fis>] b [<dis fis>]
+  fis, [<ais cis>] cis, [<cis' fis>]
+  fis, [<cis' fis>] ais [<cis fis>]
 }
 
 \score {
