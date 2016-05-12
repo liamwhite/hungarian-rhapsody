@@ -58,7 +58,7 @@ right = \relative c'' {
   \slashedGrace gisis <ais eis'> fis \slashedGrace eis <fis dis'> dis
   \slashedGrace cisis <dis bis'> bis \slashedGrace b <bis gis'> gis
   
-  <cis eis cis'> [<d fis d'> <dis fisis dis'> <e gis e'>
+  <cis, eis cis'> [<d fis d'> <dis fisis dis'> <e gis e'>
   <f a f'> <e gis e'> <dis fisis dis'> <d fis d'>]
   
   <dis fisis dis'> [<e gis e'> <eis gisis eis'> <fis ais fis'>
@@ -74,7 +74,10 @@ right = \relative c'' {
   <b dis b'> <ais cisis ais'> <a cis a'> <ais cisis ais'>]
   
   <b dis b'> [<cis disis bis'> <cis eis cis'> <d fis d'>
-  <dis fisis dis'> <e gis e'> <f a f'> <eis gis eis'>]
+  <dis fisis dis'> <e gis e'> <f a f'> <e gis e'>
+  <dis fisis dis'> <d fis d'> <cis eis cis'> <bis fis' bis>]
+  
+  <cis eis cis'> [<bis fis' bis> <cis eis cis'> <bis fis' bis>]
 }
 
 left = \relative c' {
@@ -124,7 +127,7 @@ left = \relative c' {
   dis <gis bis fis'> gis, <gis' bis fis'>
   dis <gis bis fis'> gis, <gis' bis fis'>
   
-  <cis cis'> [<bis bis'> <b b'> <ais ais'>
+  <cis, cis'> [<bis bis'> <b b'> <ais ais'>
   <a a'> <ais ais'> <b b'> <bis bis'>]
   
   <b b'> [<ais ais'> <gisis gisis'> <ais ais'>
@@ -142,6 +145,8 @@ left = \relative c' {
   <dis dis'> [<d d'> <cis cis'> <bis bis'>
   <b b'> <ais ais'> <a a'> <ais ais'>
   <b b'> <bis bis'> <cis gis' cis> <d d'>]
+  
+  <cis gis cis'> [<d d'> <cis gis cis'> <d d'>]
 }
 
 \score {
