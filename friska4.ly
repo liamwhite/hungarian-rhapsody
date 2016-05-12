@@ -78,6 +78,12 @@ right = \relative c'' {
   <dis fisis dis'> <d fis d'> <cis eis cis'> <bis fis' bis>]
   
   <cis eis cis'> [<bis fis' bis> <cis eis cis'> <bis fis' bis>]
+  <cis eis cis'>\ff
+  \ottava #0
+  <bis, bis'> [<cis cis'> <bis bis'>] <cis cis'>
+  <cis, cis'> [<d d'> <dis dis'>]
+  << {\voiceOne <e e'>4\fff <gis gis'>4 <cis cis'>-^\sf } \new Voice {\voiceTwo r8 <gis b> r8 <b e> r8 <e gis> [<e gis>] \stemUp <b b'>8 }>> \oneVoice
+  
 }
 
 left = \relative c' {
@@ -147,6 +153,9 @@ left = \relative c' {
   <b b'> <bis bis'> <cis gis' cis> <d d'>]
   
   <cis gis cis'> [<d d'> <cis gis cis'> <d d'>]
+  <cis gis cis'> <bis' bis'> [<cis cis'> <bis bis'>]
+  <cis cis'> <cis, cis'> [<d d'> <dis dis'>]
+  << {\voiceOne r8 <gis' b> r8 <b e> r8 <e gis> [<e gis>] \stemDown <b, b'>} \new Voice {\voiceTwo <e, e'>4 <gis gis'> <cis cis'> } >> \oneVoice
 }
 
 \score {
