@@ -98,6 +98,17 @@ right = \relative c'' {
   <d, gis>16 [e' <e, b'> e'] <d, gis> [e' <e, b'> e']
   <cis, a'> [e' <e, cis'> e'] <cis, a'> [e' <e, cis'> e']
   <cis, a'> [e' <e, cis'> e'] <cis, a'> [e' <e, cis'> e']
+
+  <fis, d'>32\ff [e' fis] r32 r8
+  <d, b'>32 [cis' d] r32 r8
+  <b, gis'>32 [a' b] r32 r8
+  <gis, e'>32 [fis' gis] r32 r8
+  
+  \ottava #0
+  a,,32 [b cis d e fis gis a b cis d e fis g
+  \ottava #1
+  s16.
+  a32 b cis d e fis g] a8 <a, cis>
 }
 
 left = \relative c' {
@@ -189,6 +200,11 @@ left = \relative c' {
   <a a'> [<gis gis'> <g g'> <fis fis'>]
   \clef bass
   <f f'> [<e e'> <dis dis'> <e e'>]
+  
+  <gis d' e> e <gis d' e> b,
+  <gis' d' e> e, <gis' d' e> b,
+  <a' cis e> e <a cis e> cis,
+  <a' cis e> e, <a' cis e> cis,
 }
 
 \score {
