@@ -83,7 +83,21 @@ right = \relative c'' {
   <bis, bis'> [<cis cis'> <bis bis'>] <cis cis'>
   <cis, cis'> [<d d'> <dis dis'>]
   << {\voiceOne <e e'>4\fff <gis gis'>4 <cis cis'>-^\sf } \new Voice {\voiceTwo r8 <gis b> r8 <b e> r8 <e gis> [<e gis>] \stemUp <b b'>8 }>> \oneVoice
+  <a cis e a> [<gis gis'> <g g'> <fis a cis fis>\arpeggio]
+  <f f'> [<e a cis e>\arpeggio <dis dis'> <e a cis e>\arpeggio]
+  << {\voiceOne <e e'>4 <gis gis'>4 <cis cis'>-^\sf } \new Voice {\voiceTwo r8 <gis b> r8 <b e> r8 <e gis> [<e gis>] \stemUp <b b'>8 }>> \oneVoice
+  <a cis e a> [<gis gis'> <fis fis'> <e a cis e>]
+  <a cis e a>4-> <cis e a cis>->
   
+  \ottava #1
+  <d' gis>16 [e' <e, b'> e'] <d, gis> [e' <e, b'> e']
+  <d, gis>16 [e' <e, b'> e'] <d, gis> [e' <e, b'> e']
+  <cis, a'> [e' <e, cis'> e'] <cis, a'> [e' <e, cis'> e']
+  <cis, a'> [e' <e, cis'> e'] <cis, a'> [e' <e, cis'> e']
+  <d, gis>16 [e' <e, b'> e'] <d, gis> [e' <e, b'> e']
+  <d, gis>16 [e' <e, b'> e'] <d, gis> [e' <e, b'> e']
+  <cis, a'> [e' <e, cis'> e'] <cis, a'> [e' <e, cis'> e']
+  <cis, a'> [e' <e, cis'> e'] <cis, a'> [e' <e, cis'> e']
 }
 
 left = \relative c' {
@@ -156,6 +170,25 @@ left = \relative c' {
   <cis gis cis'> <bis' bis'> [<cis cis'> <bis bis'>]
   <cis cis'> <cis, cis'> [<d d'> <dis dis'>]
   << {\voiceOne r8 <gis' b> r8 <b e> r8 <e gis> [<e gis>] \stemDown <b, b'>} \new Voice {\voiceTwo <e, e'>4 <gis gis'> <cis cis'> } >> \oneVoice
+  <a cis e a>8 [<gis gis'> <g g'> <fis a cis fis>\arpeggio]
+  <f f'> [<e a cis e>\arpeggio <dis dis'> <e a cis e>\arpeggio]
+  << {\voiceOne r8 <gis' b> r8 <b e> r8 <e gis> [<e gis>] \stemDown <b, b'>} \new Voice {\voiceTwo <e, e'>4 <gis gis'> <cis cis'> } >> \oneVoice
+  <a cis e a>8 [<gis gis'> <fis fis'> <e a cis e>]
+  <a cis e a>4-> <cis e a cis>->
+
+  <e, e'>8 [<e' e'> <b b'> <gis' gis'> <e e'>]
+  \clef treble
+  <cis' cis'>4-^ <b b'>8
+  <a a'> [<gis gis'> <g g'> <fis fis'>]
+  \clef bass
+  <f f'> [<e e'> <cis cis'> <a a'>]
+
+  <e e'>8 [<e' e'> <b b'> <gis' gis'> <e e'>]
+  \clef treble
+  <cis' cis'>4-^ <b b'>8
+  <a a'> [<gis gis'> <g g'> <fis fis'>]
+  \clef bass
+  <f f'> [<e e'> <dis dis'> <e e'>]
 }
 
 \score {
