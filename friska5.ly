@@ -9,6 +9,9 @@ global = {
   \time 2/4
 }
 
+upper = {\change Staff = "right" \stemDown}
+lower = {\change Staff = "left" \stemUp}
+
 right = \relative c'' {
   \global
   \ottava #1
@@ -54,6 +57,44 @@ right = \relative c'' {
   \grace {fis16 [gis]} fis8 [r16 eis fis8 r16 gis]
   \grace {fis16 [gis]} a8-. r8 a4
   gis8 [r16 a b8 r16 d] cis2\fermata
+  
+  \clef bass
+  \lower cis,,,,16 [\upper <cis' cis'>
+  \lower dis, \upper <dis' dis'>
+  \lower eis, \upper <eis' eis'>
+  \lower fis, \upper <fis' fis'>]
+  \lower <gis, cis>16-- [\upper <gis' cis gis'>--
+  \lower fisis, \upper <fisis' fisis'>
+  \lower gis, \upper <gis' gis'>
+  \lower eis, \upper <eis' eis'>]
+  \lower fis, [\upper <fis' fis'>
+  \lower gis, \upper <gis' gis'>
+  \lower ais, \upper <ais' ais'>
+  \lower b, \upper <b' b'>]
+  \clef treble
+  \lower <cis, fis>-- [\upper <cis' fis cis'>--
+  \lower bis, \upper <bis' bis'>
+  \lower cis, \upper <cis' cis'>
+  \lower ais, \upper <ais' ais'>]
+  \lower b, [\upper <b' b'>
+  \lower dis, \upper <dis' dis'>
+  \lower gis,, \upper <gis' gis'>
+  \lower b, \upper <b' b'>]
+  \clef bass
+  \lower eis,, [\upper <eis' eis'>
+  \lower gis, \upper <gis' gis'>
+  \lower cis,, \upper <cis' cis'>
+  \lower <eis,> \upper <eis' eis'>]
+  \lower fis, [\upper <fis' fis'>
+  \lower ais, \upper <ais' ais'>
+  \lower cis,, \upper <cis' cis'>
+  \lower fis, \upper <fis' fis'>]
+  \lower ais,, [\upper <ais' ais'>
+  \lower cis, \upper <cis' cis'>
+  \lower <fis,, fis'> \upper <fis'' fis'>
+  \lower <ais,, ais'> \upper <ais'' ais'>]
+  \clef treble
+  
 }
 
 left = \relative c' {
@@ -97,6 +138,9 @@ left = \relative c' {
   fis,8 [<cis' fis a> cis, <cis' fis a>]
   gis8 [<cis eis b'> cis, <cis' eis b'>]
   r2\fermata
+
+  % kneed beams
+  s2*8
 }
 
 \score {
