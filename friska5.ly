@@ -94,7 +94,86 @@ right = \relative c'' {
   \lower <fis,, fis'> \upper <fis'' fis'>
   \lower <ais,, ais'> \upper <ais'' ais'>]
   \clef treble
+  % 1
+  \lower <cis,, eis gis cis> [\upper <cis'' eis gis cis>
+  \lower <dis,, dis'> \upper <dis'' dis'>
+  \lower <eis,, eis'> \upper <eis'' eis'>
+  \lower <fis,, fis'> \upper <fis'' fis'>]
+  \lower <gis,, cis gis'>-> [\upper <gis'' cis gis'>->
+  \lower <fisis,, fisis'> \upper <fisis'' fisis'>
+  \lower <gis,, cis gis'> \upper <gis'' cis gis'>
+  \lower <eis,, eis'> \upper <eis'' eis'>]
+  \lower <fis,, ais cis fis> [\upper <fis'' ais cis fis>
+  \lower <gis,, gis'> \upper <gis'' gis'>
+  \lower <ais,, ais'> \upper <ais'' ais'>
+  \lower <b,, b'> \upper <b'' b'>]
+  \lower <cis,, fis cis'>-> [\upper <cis'' fis cis'>->
+  \lower <bis,, bis'> \upper <bis'' bis'>
+  \lower <cis,, fis cis'> \upper <cis'' fis cis'>
+  \lower <ais,, ais'> \upper <ais'' ais'>]
+
+  % 1
+  \lower <cis,, eis gis cis> [\upper <cis'' eis gis cis>
+  \lower <dis,, dis'> \upper <dis'' dis'>
+  \lower <eis,, eis'> \upper <eis'' eis'>
+  \lower <fis,, fis'> \upper <fis'' fis'>]
+  \ottava #1
+  \lower <gis,, cis gis'>-> [\upper <gis'' cis gis'>->
+  \lower <fisis,, fisis'> \upper <fisis'' fisis'>
+  \lower <gis,, cis gis'> \upper <gis'' cis gis'>
+  \lower <eis,, eis'> \upper <eis'' eis'>]
+  \lower <fis,, ais cis fis> [\upper <fis'' ais cis fis>
+  \lower <gis,, gis'> \upper <gis'' gis'>
+  \lower <ais,, ais'> \upper <ais'' ais'>
+  \lower <b,, b'> \upper <b'' b'>]
+  \lower <cis,, fis cis'>-> [\upper <cis'' fis cis'>->
+  \lower <bis,, bis'> \upper <bis'' bis'>
+  \lower <cis,, fis cis'> \upper <cis'' fis cis'>
+  \lower <ais,, ais'> \upper <ais'' ais'>]
   
+  % 2
+  \lower <b,, b'> [\upper <b'' b'>
+  \lower <dis,, dis'> \upper <dis'' dis'>
+  \lower <gis,,, gis'> \upper <gis'' gis'>
+  \lower <b,, b'> \upper <b'' b'>]
+  \ottava #0
+  \lower <eis,,, eis'> [\upper <eis'' eis'>
+  \lower <gis,, gis'> \upper <gis'' gis'>
+  \lower <cis,,, cis'> \upper <cis'' cis'>
+  \lower <eis,, eis'> \upper <eis'' eis'>]
+  \lower <ais,,, ais'> [\upper <ais'' ais'>
+  \lower <cis,, cis'> \upper <cis'' cis'>
+  \lower <fis,,, fis'> \upper <fis'' fis'>
+  \lower <ais,, ais'> \upper <ais'' ais'>]
+  \lower <dis,,, dis'> [\upper <dis'' dis'>
+  \lower <fis,, fis'> \upper <fis'' fis'>
+  \lower <b,,, b'> \upper <b'' b'>
+  \lower <dis,, dis'> \upper <dis'' dis'>]
+  \clef bass
+  \lower <gis,,, gis'> [\upper <gis'' gis'>
+  \lower <b,, b'> \upper <b'' b'>
+  \lower <eis,,, eis'> \upper <eis'' eis'>
+  \lower <gis,, gis'> \upper <gis'' gis'>]
+  \lower cis,, [\upper <cis' cis'>
+  \lower eis, \upper <eis' eis'>
+  \lower ais,, \upper <ais' ais'>
+  \lower cis, \upper <cis' cis'>]
+  \lower <fis,, fis'> [\upper fis''
+  \lower <ais,, ais'> \upper ais''
+  \lower dis,, \upper dis'
+  \lower fis, \upper fis']
+  
+  % okay, done with that. :)
+  \stemUp b,8 r8 r4\fermata
+  \clef treble
+  \slashedGrace <dis' b' dis>8 <dis b' dis>4->
+  \slashedGrace <eis gis b eis>8 <eis gis b eis>4->
+  \slashedGrace <fis ais cis fis>8 <fis ais cis fis>2-^
+  \ottava #1
+  <fis' ais cis fis>8 r8 <fis' ais cis fis> r8
+  \ottava #0
+  <fis,,, fis'>8 r8 r4\fermata
+  \bar "|."
 }
 
 left = \relative c' {
@@ -140,7 +219,20 @@ left = \relative c' {
   r2\fermata
 
   % kneed beams
-  s2*8
+  s2*14
+  \clef treble
+  s2*3
+  \clef bass
+  s2*6
+  
+  b,,8 r8 r4\fermata
+  \slashedGrace <b b'>8 <dis' fis b>4->
+  \slashedGrace <cis, cis'>8 <cis' eis gis cis>4->
+  \slashedGrace <fis,, fis'>8 <cis'' fis ais cis>2-^
+  \clef treble
+  <cis' fis ais cis>8 r8 <cis' fis ais cis>8 r8
+  \clef bass
+  <fis,,,, fis'>8 r8 r4\fermata \bar "|."
 }
 
 \score {
